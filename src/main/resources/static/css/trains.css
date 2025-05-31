@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+    background-color: #4a148c;
+    padding: 15px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 31px;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+/*form input[type="text"],*/
+/*form input[type="datetime-local"] {*/
+/*    padding: 8px;*/
+/*    margin: 5px 0;*/
+/*    width: 250px;*/
+/*}*/
+
+.menu-bar {
+    display: flex;
+    background-color: #4a148c;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.item {
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.item:last-child {
+    border-right: none;
+}
+
+.item:hover {
+    background-color: #e0c9f7;
+    color: black;
+
+}
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: separate; /* дозволяє округлювати кути */
+    background-color: #e0c9f7;
+    border-radius: 30px;
+    overflow: hidden; /* обрізає вміст за межами округлених кутів */
+}
+
+th, td {
+    padding: 10px;
+    border: none; /* прибирає чорний контур */
+    text-align: center;
+}
+
+tr {
+    min-height: 40px; /* для візуального заповнення простору навіть без даних */
+}

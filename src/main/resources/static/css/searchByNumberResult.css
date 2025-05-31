@@ -1,0 +1,47 @@
+.train-table {
+    width: 100%;
+    max-width: 600px; /* Обмеження ширини для кращого вигляду */
+    margin: 20px auto; /* Центрування таблиці */
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Щоб закруглення працювало */
+}
+
+.train-table thead {
+    background-color: #4a148c;
+    color: white;
+    text-align: left;
+}
+
+.train-table th,
+.train-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.train-table tbody tr:nth-child(even) {
+    background-color: #f9fbff;
+}
+
+.train-table tbody tr:hover {
+    background-color: #d0e4ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.train-table td {
+    vertical-align: middle;
+}
+
+/* Для повідомлення "Поїзд не знайдено" */
+.no-train-message {
+    text-align: center;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

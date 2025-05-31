@@ -1,0 +1,24 @@
+<div th:fragment="resultFragment">
+  <table class="train-table" th:if="${trains != null and !trains.isEmpty()}">
+    <thead>
+    <tr>
+      <th>Номер поїзда</th>
+      <th>Призначення</th>
+      <th>День відправлення</th>
+      <th>Година відправлення</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="train : ${trains}">
+      <td th:text="${train.trainNumber}"></td>
+      <td th:text="${train.destination}"></td>
+      <td th:text="${#temporals.format(train.departureTime, 'dd.MM.yyyy EEEE')}"></td>
+      <td th:text="${#temporals.format(train.departureTime, 'HH:mm')}"></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <p class="no-train-message" th:if="${trains == null or trains.isEmpty()}">
+    Потяги не знайдено
+  </p>
+</div>

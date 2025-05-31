@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Список поїздів</title>
+  <link rel="stylesheet" th:href="@{/css/trains.css}" />
+</head>
+<body>
+  <div class="header">Список поїздів</div>
+  <div class="menu-bar">
+    <a href="/" class="item">
+      <div class="menu-item">Про потяги далекого прямування</div>
+    </a>
+    <a href="/trains/search/number" class="item">
+      <div class="menu-item">Пошук за номером потяга</div>
+    </a>
+    <a href="/trains/search/destination" class="item">
+      <div class="menu-item">Пошук за місцем прибуття</div>
+    </a>
+  </div>
+  <table>
+    <tr style="background-color: #4a148c; color: white">
+      <th>Номер потягу</th><th>Станція прибуття</th><th>Час прибуття</th></tr>
+    <tr th:each="train : ${trains}" >
+      <td th:text="${train.trainNumber}"></td>
+      <td th:text="${train.destination}"></td>
+      <td th:text="${train.departureTime}"></td>
+    </tr>
+    <tr th:if="${#lists.isEmpty(trains)}">
+      <td colspan="3" style="text-align: center; font-weight: bold">Наразі потягів не знайдено</td>
+    </tr>
+  </table>
+</body>
+</html>

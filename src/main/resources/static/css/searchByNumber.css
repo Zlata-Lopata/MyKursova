@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    padding-bottom: 100px;
+}
+
+.header {
+    background-color: #4a148c;
+    padding: 15px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 31px;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.item {
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.item:last-child {
+    border-right: none;
+}
+
+.item:hover {
+    background-color: #e0c9f7;
+    color: black;
+
+}
+
+.menu-bar {
+    display: flex;
+    background-color: #4a148c;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.train-search-form {
+    display: table;
+    margin: 30px auto;
+}
+
+
+.form-label {
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-size: 1.1rem;
+}
+.form-row{
+    display: flex;
+    margin: 0 30px;
+}
+.form-input {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 1000px;
+    margin: 30px 0;
+}
+.form-button-wrapper {
+    text-align: center;
+}
+
+.form-button {
+    font-weight: bold;
+    padding: 12px 18px;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px 0 30px 30px;
+}
+
+.form-button:hover {
+    background-color: #e0c9f7;
+    color: black;
+}
